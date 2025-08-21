@@ -1,34 +1,25 @@
 # ❤️ Heart Disease Prediction
 
-This project predicts the risk of **heart disease** using a **machine learning model (Random Forest with probability calibration)**.  
-The model classifies patients into **Low**, **Borderline**, or **High** risk categories, along with the predicted probability.
+This project predicts the **risk of heart disease** based on patient health data.  
+It uses a **Random Forest Classifier** with probability calibration, deployed with **Gradio** and **Streamlit** for interactive use.
 
 ---
 
-## 🚀 Features
-- ✅ Trained on heart disease dataset (clinical features like age, cholesterol, blood pressure, etc.)  
-- ✅ Uses **CalibratedClassifierCV (sigmoid)** to improve probability reliability  
-- ✅ Interactive **Gradio app** for easy testing in Colab or locally  
-- ✅ Threshold-based interpretation:
-  - **Low risk** → Probability < 0.45  
-  - **Borderline risk** → 0.45 ≤ Probability ≤ 0.75  
-  - **High risk** → Probability > 0.75  
+## 📂 Files in This Repository
+
+- **Heart_Project.ipynb** → Jupyter/Colab notebook for data preprocessing, model training, and evaluation.  
+- **app.py** → Streamlit web app for interactive predictions.  
+- **final_model.pkl** → Saved trained model (pre-trained, so you don’t need to retrain).  
+- **requirements.txt** → Required Python packages.  
+- **README.md** → Project documentation (this file).  
 
 ---
 
-## 📂 Project Structure
-- `Heart_Project.ipynb` → Notebook (data preprocessing, training, evaluation)  
-- `final_model.pkl` → Saved calibrated model (ready to use)  
-- `app.py` → (Optional) Streamlit web app for deployment  
-- `requirements.txt` → Dependencies for running the project  
-- `README.md` → Project documentation  
+## ⚙️ Install Dependencies
 
----
+Clone the repo and install the requirements:
 
-## ⚙️ Installation & Usage
-
-### 🔹 Run in Google Colab
-1. Upload the notebook (`Heart_Project.ipynb`) and `final_model.pkl`.  
-2. Install dependencies:
-   ```bash
-   !pip install -r requirements.txt
+```bash
+git clone https://github.com/your-username/Heart-Disease-Prediction.git
+cd Heart-Disease-Prediction
+pip install -r requirements.txt
